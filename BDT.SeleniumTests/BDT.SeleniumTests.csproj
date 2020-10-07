@@ -65,7 +65,11 @@
   <ItemGroup>
     <Compile Include="BasePage.cs" />
     <Compile Include="BaseTest.cs" />
+    <Compile Include="HomePage.cs" />
+    <Compile Include="LandingPage.cs" />
+    <Compile Include="LaunchingPage.cs" />
     <Compile Include="LoginTC.cs" />
+    <Compile Include="PackagesMenu.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

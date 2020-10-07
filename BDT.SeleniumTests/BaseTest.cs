@@ -19,11 +19,13 @@ namespace BDT.SeleniumTests
             var options = new EdgeOptions();
             options.UseChromium = true;
             driver = new EdgeDriver(options);
+            driver.Manage().Window.Maximize();
 
-        }
+            }
             else if (browser=="chrome")
             {
                 driver = new ChromeDriver();
+                driver.Manage().Window.Maximize();
 
             }
 
