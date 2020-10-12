@@ -26,6 +26,8 @@ namespace BDT.SeleniumTests
 
         public HomePage SignIn()
         {
+
+
             driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(10);
             driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             loginBtn.Click();

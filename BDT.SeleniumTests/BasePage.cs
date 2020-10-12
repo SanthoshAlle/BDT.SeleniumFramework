@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Edge;
+using RelevantCodes.ExtentReports;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +13,8 @@ namespace BDT.SeleniumTests
     public class BasePage
     {
         public IWebDriver driver;
+        public ExtentTest test;
+
 
     }
 }
