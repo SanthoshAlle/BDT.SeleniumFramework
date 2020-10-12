@@ -23,11 +23,12 @@ namespace BDT.SeleniumTests
         {
             driver.Url = "https://www.bestdotnettraining.com/";
             //span[contains(text(),'×')]
-            //driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(60);
-            //driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
-            Thread.Sleep(10000);
+            driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(60);
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(60);
+            //Thread.Sleep(10000);
             //driver.FindElement(By.XPath("span[contains(text(),'×')]")).Click();
-            driver.FindElement(By.XPath("div[@id='modalAd']/div/div/div/button")).Click();
+            //driver.FindElement(By.XPath("div[@id='modalAd']/div/div/div/button")).Click();
+            driver.FindElement(By.XPath("//div[@id='modalAd']/div/div/div/button")).Click();
             LandingPage lpage = new LandingPage(driver);
             PageFactory.InitElements(driver, lpage);
             return lpage;
